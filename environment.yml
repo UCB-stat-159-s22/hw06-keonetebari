@@ -1,4 +1,4 @@
-name: ligo
+name: ligo-hw6
 dependencies:
   - python=2.7
   - decorator=4.4
