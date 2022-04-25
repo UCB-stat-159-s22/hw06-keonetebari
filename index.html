@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BINARY BLACK HOLE SIGNALS IN LIGO OPEN DATA &#8212; My sample book</title>
+    <title>BINARY BLACK HOLE SIGNALS IN LIGO OPEN DATA &#8212; HW6 - Ligo Tools - Keon Etebari</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -80,7 +80,7 @@
       <img src="_static/logo.png" class="logo" alt="logo">
       
       
-      <h1 class="site-logo" id="site-title">My sample book</h1>
+      <h1 class="site-logo" id="site-title">HW6 - Ligo Tools - Keon Etebari</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
@@ -89,25 +89,12 @@
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="intro.html">
-   Welcome to your Jupyter Book
+ <li class="toctree-l1 current">
+  <a class="reference internal" href="#">
+   BINARY BLACK HOLE SIGNALS IN LIGO OPEN DATA
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="markdown.html">
-   Markdown Files
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="notebooks.html">
-   Content with notebooks
-  </a>
- </li>
-</ul>
-
     </div>
 </nav> <!-- To handle the deprecated key -->
 
@@ -515,7 +502,8 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="binary-black-hole-signals-in-ligo-open-data">
+  <p><a class="reference external" href="https://mybinder.org/v2/gh/UCB-stat-159-s22/hw06-keonetebari.git/HEAD">https://mybinder.org/v2/gh/UCB-stat-159-s22/hw06-keonetebari.git/HEAD</a></p>
+<div class="tex2jax_ignore mathjax_ignore section" id="binary-black-hole-signals-in-ligo-open-data">
 <h1>BINARY BLACK HOLE SIGNALS IN LIGO OPEN DATA<a class="headerlink" href="#binary-black-hole-signals-in-ligo-open-data" title="Permalink to this headline">¶</a></h1>
 <p>Version 1.63, 2017 Sept 11</p>
 <p>Welcome! This IPython notebook (or associated python script LOSC_Event_tutorial.py ) will go through some typical signal processing tasks on strain time-series data associated with the LIGO Event data releases from the LIGO Open Science Center (LOSC):</p>
@@ -797,7 +785,7 @@ For L1, 32 out of 32 seconds contain usable DATA
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1126259462.44
 </pre></div>
 </div>
-<img alt="_images/index_17_1.png" src="_images/index_17_1.png" />
+<img alt="_images/index_18_1.png" src="_images/index_18_1.png" />
 </div>
 </div>
 <p>The data are dominated by <strong>low frequency noise</strong>; there is no way to see a signal here, without some signal processing.</p>
@@ -853,7 +841,7 @@ For the moment, let’s ignore that, and assume it’s all noise.</p>
   warnings.warn(message, mplDeprecation, stacklevel=1)
 </pre></div>
 </div>
-<img alt="_images/index_20_1.png" src="_images/index_20_1.png" />
+<img alt="_images/index_21_1.png" src="_images/index_21_1.png" />
 </div>
 </div>
 <p>NOTE that we only plot the data between f_min = 20 Hz and f_max = 2000 Hz.</p>
@@ -1048,8 +1036,8 @@ Whitening requires no prior knowledge of spectral lines, etc; only the data are 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/index_28_0.png" src="_images/index_28_0.png" />
-<img alt="_images/index_28_1.png" src="_images/index_28_1.png" />
+<img alt="_images/index_29_0.png" src="_images/index_29_0.png" />
+<img alt="_images/index_29_1.png" src="_images/index_29_1.png" />
 </div>
 </div>
 <p>In the above spectrograms, you may see lots of excess power below ~20 Hz, as well as strong spectral lines at 500, 1000, 1500 Hz (also evident in the ASDs above). The lines at multiples of 500 Hz are the harmonics of the “violin modes” of the fibers holding up the mirrors of the Advanced LIGO interferometers.</p>
@@ -1092,8 +1080,8 @@ Whitening requires no prior knowledge of spectral lines, etc; only the data are 
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="_images/index_30_0.png" src="_images/index_30_0.png" />
-<img alt="_images/index_30_1.png" src="_images/index_30_1.png" />
+<img alt="_images/index_31_0.png" src="_images/index_31_0.png" />
+<img alt="_images/index_31_1.png" src="_images/index_31_1.png" />
 </div>
 </div>
 <p>Loud (high SNR) signals may be visible in these spectrograms.  Compact object mergers show a characteristic “chirp” as the signal rises in frequency.  If you can’t see anything, try
@@ -1238,7 +1226,7 @@ v/c at peak = 0.57
 Radius of final BH = 199 km
 </pre></div>
 </div>
-<img alt="_images/index_34_1.png" src="_images/index_34_1.png" />
+<img alt="_images/index_35_1.png" src="_images/index_35_1.png" />
 </div>
 </div>
 </div>
@@ -1426,12 +1414,12 @@ The LIGO Scientific Collaboration, the Virgo Collaboration, <a class="reference 
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>For detector L1, maximum at 1126259462.4324 with SNR = 13.2, D_eff = 999.74, horizon = 1650.6 Mpc
 </pre></div>
 </div>
-<img alt="_images/index_36_2.png" src="_images/index_36_2.png" />
-<img alt="_images/index_36_3.png" src="_images/index_36_3.png" />
-<img alt="_images/index_36_4.png" src="_images/index_36_4.png" />
-<img alt="_images/index_36_5.png" src="_images/index_36_5.png" />
-<img alt="_images/index_36_6.png" src="_images/index_36_6.png" />
-<img alt="_images/index_36_7.png" src="_images/index_36_7.png" />
+<img alt="_images/index_37_2.png" src="_images/index_37_2.png" />
+<img alt="_images/index_37_3.png" src="_images/index_37_3.png" />
+<img alt="_images/index_37_4.png" src="_images/index_37_4.png" />
+<img alt="_images/index_37_5.png" src="_images/index_37_5.png" />
+<img alt="_images/index_37_6.png" src="_images/index_37_6.png" />
+<img alt="_images/index_37_7.png" src="_images/index_37_7.png" />
 </div>
 </div>
 <div class="section" id="notes-on-these-results">
@@ -1774,7 +1762,7 @@ You can download this file by clicking &#39;jupyter&#39; in the top left corner,
     <footer class="footer">
   <p>
     
-      By The Jupyter Book Community<br/>
+      By Ligo Scientific Collaboration (LSC) and Keon Etebari<br/>
     
         &copy; Copyright 2021.<br/>
   </p>
