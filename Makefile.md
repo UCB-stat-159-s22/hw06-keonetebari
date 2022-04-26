@@ -2,7 +2,7 @@
 AUDIO=$(wildcard audio/*.wav)
 FIGURS=$(wildcard figurs/*.png)
 DATA=$(wildcard data/*.csv)
-
+BUILD=$(wildcard _build/*)
 ## ENVIRONMENT SETUP
 
 .PHONY : env
