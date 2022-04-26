@@ -29,7 +29,7 @@ def reqshift(data,fshift=100,sample_rate=4096):
     # print T,df,nbins,x.real.shape
     y = np.roll(x.real,nbins) + 1j*np.roll(x.imag,nbins)
     y[0:nbins]=0.
-    z = numpy.fft.irfft(y)
+    z = np.fft.irfft(y)
     return z
 
 def plot(time, timemax, tevent, SNR, pcolor, det, eventname, plottype, strain_whitenbp, template_match, template_fft, datafreq, d_eff, freqs, data_psd, fs):
